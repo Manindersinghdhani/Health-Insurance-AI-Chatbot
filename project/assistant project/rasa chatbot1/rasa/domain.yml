@@ -1,0 +1,62 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - claim
+  - accident
+  - health
+  - serious
+  - answer3
+  - proff
+  - deny
+  - thank
+  - bot_challenge
+
+actions:
+  - action_predict
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "hello there!"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Thank you, I hope I was help full Bye for now"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_selfintroduction:
+  - text: I am insurance claim predictor. I can help you to know if you can claim an insurance or not.  
+
+  utter_request:
+  - text: okay then, please cooperate with the following steps 
+
+  utter_question1:
+  - text: reason for claiming the insurance.....was it an accident or an improper health condition?
+
+  utter_question2:
+  - text: how serious was the condition of the patient?
+
+  utter_question3:
+  - text: did the patient suffered form any pre-existing health conditions?
+
+  utter_question4:
+  - text: finally what is occupation of the patient?....govt or corporate or private?
+
+  utter_sleep:
+  - text: thank you for your time please wait  your request is being processed.....
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

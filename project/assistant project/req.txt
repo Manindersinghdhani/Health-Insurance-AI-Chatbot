@@ -1,0 +1,7 @@
+rasa==2.2
+pillow
+opencv-python
+flask
+joblib
+requests
+pytesseract
